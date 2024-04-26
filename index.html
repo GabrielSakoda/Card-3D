@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card card1">
+            <h1>Tênis Azul</h1>
+            <img src="imagens/azul2.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+        <div class="card card2">
+            <h1>Tênis Vermelho</h1>
+            <img src="imagens/red.png" alt="" class="produto">
+            <button>Comprar</button>
+        </div>
+    </div>
+</body>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 50,
+		speed: 400,
+        glare: true,
+        reverse: false,
+        "max-glare":0.5
+	});
+    </script>
+</html>
